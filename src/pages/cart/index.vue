@@ -4,8 +4,16 @@
 </div>
 </template>
 <script>
+  import addGood from '@/pages/cart/components/addGood'
+  import address from '@/pages/cart/components/address'
+  import cartList from '@/pages/cart/components/cartList'
   export default {
     name: 'Cart',
+    components: {
+      addGood,
+      address,
+      cartList
+    }
   }
 </script>
 <style lang='less' rel='stylesheet/less' scoped>

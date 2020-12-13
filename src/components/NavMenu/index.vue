@@ -130,7 +130,7 @@ export default {
     outLogin(){
       localStorage.removeItem('USERTOKEN')
       this.$router.push('/login')
-    }
+    },
   },
   mounted(){
     this.getCityList()
