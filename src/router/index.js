@@ -16,7 +16,11 @@ VueRouter.prototype.replace = function (location, onComplete, onAbort = () => { 
 const router = new VueRouter({
   // linkActiveClass:'active',
   mode:'history',
-  routes
+  routes,
+  scrollBehavior () {
+    // return返回期望滚动到的位置的坐标
+    return { x: 0, y: 0 }
+  }
 })
 router.beforeEach((to,from,next)=>{
   //全局路由前置守卫,如果进入的路径不是login,且没有登陆,就跳转到登陆页

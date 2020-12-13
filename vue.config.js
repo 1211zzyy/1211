@@ -6,7 +6,7 @@ module.exports={
 		proxy: {
 			'/api': {
 				target: 'https://elm.cangdu.org',
-				ws: true,
+				// ws: true,
 				changeOrigin: true,
 				pathRewrite: {
 					'^/api': ''
